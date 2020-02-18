@@ -20,6 +20,7 @@ module.exports = function (app) {
         //Set current best score to compare against other. initial value as 100 to guarantee the first user in the list will be chosen
         var currentBestScore = 100;
 
+        //for list for comparing user's score to all user in friend list
         for (var i = 0; i < friendList.length; i++) {
             var score = friendList[i].scores; //this is an array of score from current user
             console.log(score)
