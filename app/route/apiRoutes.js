@@ -31,7 +31,6 @@ module.exports = function (app) {
             //get the difference in score between new user and each existing member
             var diffScore = 0; //initialize difference in score
             for (var k = 0; k < score.length; k++) {
-                // console.log(score[k], newUserScore[k])
 
                 diffScore += parseInt(Math.abs(parseInt(score[k]) - parseInt(newUserScore[k])))
                 console.log(diffScore)
