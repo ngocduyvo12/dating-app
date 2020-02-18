@@ -41,6 +41,7 @@ module.exports = function (app) {
             listScore.push(diffScore)
             console.log(listScore)
 
+            //if there's a new user with better scoring then replace current best score
             if (currentBestScore > listScore[i]) {
                 var matchName = friendList[i].name
                 var picture = friendList[i].photo
