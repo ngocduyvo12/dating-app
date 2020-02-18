@@ -53,6 +53,7 @@ module.exports = function (app) {
             console.log(`URL: ${picture}`)
         }
 
+        //push user's score into the list
         friendList.push(newUser)
         res.json(bestMatch);
     })
