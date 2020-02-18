@@ -1,4 +1,4 @@
-
+//starter user for comparison
 var friendListArray = [
     {
         "name":"Ahmed",
