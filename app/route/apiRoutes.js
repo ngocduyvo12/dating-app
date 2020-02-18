@@ -6,12 +6,11 @@ module.exports = function (app) {
     // Below code handles when users "visit" a page.
     // In each of the below cases when a user visits a link
     // (ex: localhost:PORT/api/admin... they are shown a JSON of the data in the table)
-
     app.get("/api/list", function (req, res) {
         res.json(friendList)
     })
 
-
+    //API post request 
     app.post("/api/friends", function (req, res) {
         var newUser = req.body;
         var newUserScore = newUser.scores; //array of new user score
