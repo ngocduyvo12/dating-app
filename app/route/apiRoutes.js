@@ -37,6 +37,7 @@ module.exports = function (app) {
                 console.log(diffScore)
             }
 
+            //push score difference into list score array
             listScore.push(diffScore)
             console.log(listScore)
 
